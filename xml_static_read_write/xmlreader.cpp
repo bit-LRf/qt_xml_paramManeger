@@ -1,8 +1,8 @@
 #include "xmlreader.h"
 
-xmlReader::xmlReader(std::string value)
+xmlReader::xmlReader(std::string c_fileName)
 {
-    QString fileName = QString(QString::fromLocal8Bit(value.c_str()));
+    QString fileName = QString(QString::fromLocal8Bit(c_fileName.c_str()));
 
     QFile file(fileName);
 

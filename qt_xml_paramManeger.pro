@@ -18,6 +18,8 @@ INCLUDEPATH += ./Eigen
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    xml_static_read_write/xmlreader.cpp \
+    xml_static_read_write/xmlwritter.cpp \
     main.cpp \
     xmlcore.cpp \
     xmlexample.cpp \
@@ -25,7 +27,10 @@ SOURCES += \
     xmlreadmatrix.cpp \
     xmlwrite.cpp
 
+
 HEADERS += \
+    xml_static_read_write/xmlreader.h \
+    xml_static_read_write/xmlwritter.h \
     xmlcore.h
 
 # Default rules for deployment.

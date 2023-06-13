@@ -1,10 +1,15 @@
 #include "xmlcore.h"
+#include "xml固定读写案例/xmlreader.h"
 
 //每次使用本案例前请删除所有子节点（参数）
 int main(int argc, char *argv[])
 {
     //加载
+//    std::string fileName = "/home/lrf/param-xml/carinfo.xml";
     std::string fileName = "xmlParamExample.xml";
+
+//    xmlReader m_xmlReader(fileName);
+
     xmlCore m_xmlCore(fileName);
 
     //加载一个案例，使用这个会使重复参数检查失效（如果案例文件和打开的文件同名的话）
